@@ -7,5 +7,5 @@ library = Library('jquery_qunit', 'resources')
 # For options and examples, see the fanstatic documentation.
 # resource1 = Resource(library, 'style.css')
 
-css = ResourceInclusion(library, 'qunit.css')
-qunit = ResourceInclusion(library, 'qunit.js', depends=[css, jquery])
+css = Resource(library, 'qunit.css')
+qunit = Resource(library, 'qunit.js', depends=[css, jquery])
